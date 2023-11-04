@@ -1,5 +1,6 @@
 import { Text, TextInput, TouchableOpacity, View } from 'react-native'
 import { styles } from './styles'
+import { Participant } from '../../components/Participant'
 
 export const Home = () => {
   const handleParticipantAdd = () => {
@@ -21,6 +22,10 @@ export const Home = () => {
           <Text style={styles.buttonText}>+</Text>
         </TouchableOpacity>
       </View>
+
+      <Participant name="Júnior Dering" />
+      <Participant name="Atos Dering" />
+      <Participant name="Daniela Dering" />
     </View>
   )
 }
