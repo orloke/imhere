@@ -31,7 +31,7 @@ export const Home = () => {
       {
         text: 'Sim',
         onPress: () => {
-          Alert.alert('Deletado!')
+          setParticipants((prev) => prev.filter((item) => item != participant))
         },
       },
       {
